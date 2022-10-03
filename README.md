@@ -3,7 +3,9 @@
 1. Set up database
 
 1.1. Postgres 9.0 is used for this project, the docker can be found here: https://hub.docker.com/_/postgres. Copy .env.example to a .env file and update with username and password
+
 1.2. create a database named laravel
+
 1.3. run migrations via php artisan migrate
 
 2. Run `npm i` to install node modules
