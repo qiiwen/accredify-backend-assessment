@@ -1,0 +1,252 @@
+{
+	"info": {
+		"_postman_id": "1a41a0e9-2ec2-41f3-b704-cfbf3ac6cfd8",
+		"name": "accredify-backend-assessment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CREATE PATIENT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"patients\": [\r\n    {\r\n\t    \"patientNationality\": \"360\",\r\n\t    \"patientNric\": \"S0000000A\",\r\n        \"patientName\": \"Tan Chen Chen\",\r\n        \"patientGender\": \"Female\",\r\n        \"patientBirthDate\": \"1990-01-15\",\r\n        \"patientEmail\": \"tanchenchen@gmail.com\",\r\n        \"sampleUniqueId\": \"Sample001\",\r\n        \"sampleResults\": \"Negative\",\r\n        \"collectedDateTime\": \"2021-02-01T12:00:00Z\",\r\n        \"effectiveDateTime\": \"2021-02-01T12:00:00Z\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/createpatient",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"createpatient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TEST NRIC",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": [\r\n      0,\r\n      {},\r\n      [],\r\n      \"1\",\r\n      \"A\",\r\n      \"S234567A\",\r\n      \"1234567A\",\r\n      \"12345678\",\r\n      \"S1234567\",\r\n      \"123456789\",\r\n      \"X12345678\",\r\n      \"12345678X\",\r\n      \"111111111\",\r\n      \"XXXXXXXXX\",\r\n      \"S1234567A\",\r\n      \"S6995241A\",\r\n      \"T8890856A\",\r\n      \"F8234009A\",\r\n      \"G1166318A\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/testNric",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"testNric"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE USER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"wenqi\",\r\n    \"email\":\"wq@gmail.com\",\r\n    \"password\":\"12345678\",\r\n    \"password_confirmation\":\"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LOGIN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"wenqi\",\r\n    \"email\":\"wq@gmail.com\",\r\n    \"password\":\"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE PATIENT NEG",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"patients\": [\r\n    // {\r\n\t//     \"patientNationality\": \"SGP\",\r\n\t//     \"patientNric\": \"M0426969U\",\r\n    //     \"patientName\": \"Tan Chen Chen\",\r\n    //     \"patientGender\": \"null\",\r\n    //     \"patientBirthDate\": \"01-15-1990\",\r\n    //     \"patientEmail\": \"tanchenchen\",\r\n    //     \"sampleUniqueId\": \"Sample002\",\r\n    //     \"sampleResults\": \"Negative\",\r\n    //     \"collectedDateTime\": \"2021-02-01\",\r\n    //     \"effectiveDateTime\": \"2021-02-01\"\r\n    // },\r\n    {\r\n\t    \"patientNationality\": \"SGP\",\r\n\t    \"patientNric\": \"M0426969U\",\r\n        \"patientName\": \"Tan Chen Chen\",\r\n        \"patientGender\": \"Female\",\r\n        \"patientBirthDate\": \"1990-01-15\",\r\n        \"patientEmail\": \"tanchenchen@gmail.com\",\r\n        \"sampleUniqueId\": \"Sample002\",\r\n        \"sampleResults\": \"Negative\",\r\n        \"collectedDateTime\": \"2021-02-01\",\r\n        \"effectiveDateTime\": \"2021-02-01\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/createpatient",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"createpatient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TEST NATIONALITY",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": [\r\n      \"JP\",\r\n      \"JPN\",\r\n      \"392\",\r\n       \"SG\",\r\n       \"SGP\",\r\n       \"702\",\r\n       \"A\",\r\n       0,\r\n       \"10000\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/testNationality",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"testNationality"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TEST GENDER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": [\r\n      \"0\",\r\n      \"FEMALE\",\r\n      \"MALE\",\r\n      \"maLe\",\r\n      \"feMale\",\r\n      \"aaa\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/testGender",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"testGender"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TEST BIRTHDATE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": [\r\n      \"01-05-2000\",\r\n      \"15 Jan 2003\",\r\n      \"2000/01/05\",\r\n      \"2026-01-05\",\r\n      \"2000-23-23\"\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/testBirthdate",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"testBirthdate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
