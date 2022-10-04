@@ -23,7 +23,7 @@
 3. [app/helpers.php](app/helpers.php) for helper functions involved in mapping country codes to ISO 3166 Alpha 2 Notation
 4. [storage/app/public/countries_codes_and_coordinates.csv](storage/app/public/countries_codes_and_coordinates.csv) for country code mappings
 5. [app/Rules.Nric.php](app/Rules.Nric.php) for custom nric validator
-6. [database/2022_09_26_171606_create_patients_table.php](database/2022_09_26_171606_create_patients_table.php) for implementation of patients table in postgres database
+6. [database/migrations/2022_09_26_171606_create_patients_table.php](database/migrations/2022_09_26_171606_create_patients_table.php) for implementation of patients table in postgres database
 7. [routes/auth.php](routes/auth.php) for routes to login and register functions
 8. [app/Http/Controllers/Auth](app/Http/Controllers/Auth) for Laravel Breeze's login, register and authentication functions
 
