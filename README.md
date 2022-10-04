@@ -18,7 +18,7 @@
 
 ## Relevant files
 
-1. routes/web.php for routes to patient and test endpoint
+1. [routes/web.php](web.php) for routes to patient and test endpoint
 2. app/Http/Controllers/PatientController.php for patient creation function as well as validators' test function
 3. app/helpers.php for helper functions involved in mapping country codes to ISO 3166 Alpha 2 Notation
 4. storage/app/public/countries_codes_and_coordinates.csv for country code mappings
