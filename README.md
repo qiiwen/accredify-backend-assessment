@@ -6,7 +6,7 @@
 
 1.2. create a database named laravel
 
-1.3. run migrations via php artisan migrate
+1.3. run migrations via `php artisan migrate`
 
 2. Run `npm i` to install node modules
 
@@ -14,7 +14,7 @@
 
 4. Create user via http://127.0.0.1:8000/register (login should automatically follow)
 
-5. You can view the test cases for postman requests provided in app/postman-tests to test the endpoints
+5. You can view the test cases for postman requests provided in [app/postman-tests](app/postman-tests) to test the endpoints
 
 ## Relevant files
 
